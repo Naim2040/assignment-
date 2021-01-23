@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    text-align: center;
+    max-width: 1024px;
+
+    margin: 20px auto;
+}
+.main-menu{
+    background-color: rgb(14, 13, 13);
+    
+    padding: 40px;
+    
+}
+.main-menu li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.main-menu li a{
+    display: inline-block;
+    padding: 10px;
+    color: rgb(218, 200, 200);
+    text-decoration: none;
+}
+.main-menu li a:hover{
+    background-color: #2980b9;
+}
+
+/* DropDown Menu Start */
+
+.main-menu ul li{
+    position: relative;
+}
+.main-menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 300px;
+    background-color: #111011;
+    border-top: 3px solid rgb(81, 92, 238);
+
+    transition: .4s;
+}
+.main-menu ul li ul li{
+    display: block;
+    margin-left: 0;
+}
+.main-menu ul li ul li a{
+    display: block;
+    border: none;
+    
+}
+.main-menu ul ul li:first-child a{ 
+    border-left: none;
+}
+
+/* Hover part */
+.main-menu ul li ul{
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.main-menu ul li:hover >ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+/* sub menu start */
+
+.main-menu ul li ul li ul{
+    left: 100%;
+    top: 0;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top center;
+    visibility: hidden;
+}
+.main-menu ul li ul li:hover ul{
+   opacity: 1;
+   visibility: visible;
+   transform: scaleY(1);
+}
+
+.bg{
+    background-image: url(./img/img44.jpg);
+    padding: 200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.bg h2{
+    color: black;
+    background: white;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 30px;
+}
+.bg p{
+    margin: 20px;
+    color: black;
+    background-color:white;
+    padding:5px 30px;
+}
+
+.bg button{
+    color: white;
+    background-color:black;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid rgb(19, 18, 18);
+    border-radius: 2px;
+    margin: 15px;
+}
+
+.bg button:hover{
+    background: black;
+    transition: .3s;
+    background-color:#3498db;
+}
+
+.footer{
+    background: black;
+}
+.footer p{
+    color: white;
+    padding: 30px;
+}
+
+
+/* Social Menu  */
+.SocialMenu ul{
+    text-align: center;
+}
+.SocialMenu ul li{
+    display: inline-block;
+    margin-left: -5px;
+}
+.SocialMenu ul li a{
+    color: black;
+    background: #3498db;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+.SocialMenu ul li a:hover{
+    color: white;
+    background-color: #9b59b6;
+}
